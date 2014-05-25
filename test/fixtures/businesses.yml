@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  image: MyString
+  morning: false
+  lunch: false
+  afternoon: false
+  night: false
+
+two:
+  name: MyString
+  description: MyString
+  image: MyString
+  morning: false
+  lunch: false
+  afternoon: false
+  night: false

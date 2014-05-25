@@ -1,0 +1,27 @@
+<h1>Is it Open?</h1>
+
+<%= form_tag('/businesses', method: 'get') do %>
+  <div class="field">
+    <%= label_tag :category %><br>
+    <%= select_tag "category_id", options_for_select(Category.all.collect { |c| [ c.name, c.id ] }) %>
+  </div>
+
+  <div class="field">
+    <%= label_tag :morning %><br>
+    <%= check_box_tag :morning %>
+  </div>
+  <div class="field">
+    <%= label_tag :lunch %><br>
+    <%= check_box_tag :lunch %>
+  </div>
+  <div class="field">
+    <%= label_tag :afternoon %><br>
+    <%= check_box_tag :afternoon %>
+  </div>
+  <div class="field">
+    <%= label_tag :night %><br>
+    <%= check_box_tag :night %>
+  </div>
+
+  <%= submit_tag "Search" %>
+ <% end %>

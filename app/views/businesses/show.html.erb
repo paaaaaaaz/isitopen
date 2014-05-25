@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @business.category.name %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @business.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @business.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @business.picture, style: "width:300px" %>
+</p>
+
+<p>
+  <strong>Morning:</strong>
+  <%= @business.morning %>
+</p>
+
+<p>
+  <strong>Lunch:</strong>
+  <%= @business.lunch %>
+</p>
+
+<p>
+  <strong>Afternoon:</strong>
+  <%= @business.afternoon %>
+</p>
+
+<p>
+  <strong>Night:</strong>
+  <%= @business.night %>
+</p>
+
+<%= link_to 'Edit', edit_business_path(@business) %> |
+<%= link_to 'Back', businesses_path %>
