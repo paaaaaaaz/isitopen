@@ -1,4 +1,4 @@
-<h1>Listing businesses</h1>
+<h1>List of Businesses</h1>
 
 <table>
   <thead>
@@ -24,7 +24,7 @@
       <tr>
         <td><%= business.category.name unless business.category.nil? %></td>
         <td><%= business.name %></td>
-        <td><%= link_to "Maps", business.description %></td>
+        <td><%= link_to "Maps", business.description, target: '_blank' %></td>
         <td><%= image_tag(business.picture_url, :width => 120) if business.picture.present? %></td>
         <td><%= business.open(business.morning) %></td>
         <td><%= business.open(business.lunch) %></td>
@@ -32,7 +32,7 @@
         <td><%= business.open(business.night) %></td>
         <td><%= link_to 'Show', business %></td>
         <td><%= link_to 'Edit', edit_business_path(business) %></td>
-        <td><%= link_to 'Delete', business, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', business, method: :delete, data: { confirm: 'OOOOH! Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

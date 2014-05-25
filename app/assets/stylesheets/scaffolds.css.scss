@@ -1,13 +1,22 @@
+
 body {
-  background-color: #B3DFFF;
   color: #00000;
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
-  padding-top: 30px
+  padding-top: 30px;
+  padding-left: 25px;
 }
 
-footer { margin-top: 20px;}
+html { 
+  background: url(http://lakeviewimmediatecare.com/site/wp-content/uploads/2014/02/10-Common-Travel-Mistakes-You-Can-Avoid.jpg) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+table {
+  background-color: rgba(106, 160, 255, 0.9);
+}  
+
 table, td, th { 
   vertical-align: middle;
   border: none;
@@ -24,7 +33,7 @@ th { border-bottom: 3px solid #F5FBFF; }
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 18px;
 }
 
