@@ -24,7 +24,7 @@
       <tr>
         <td><%= business.category.name unless business.category.nil? %></td>
         <td><%= business.name %></td>
-        <td><%= business.description %></td>
+        <td><%= link_to "Maps", business.description %></td>
         <td><%= image_tag(business.picture_url, :width => 120) if business.picture.present? %></td>
         <td><%= business.open(business.morning) %></td>
         <td><%= business.open(business.lunch) %></td>
